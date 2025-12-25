@@ -1,0 +1,101 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(images/aw.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+.box-container{
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.578);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+#title{
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: bolder;
+    color: brown;
+}
+
+#mads{
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: bold;
+    color: brown;
+}
+
+#imgnicj{
+    max-width: 280px;
+    border-radius: 20%;
+}
+
+button{
+    background-color: antiquewhite;
+    color:brown;
+    border: none;
+    display: inline-flex;
+    cursor: pointer;
+    margin: 13px;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 50%;
+    align-items: center;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: rgba(255,255,255,0.3);
+    transform: scale(1.1);
+}
+
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* dili ma-clickable */
+    overflow: hidden;
+    z-index: 9999; /* naa sa ibabaw sa tanan */
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    opacity: 0.8;
+    transform: rotate(0deg);
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+
+
+
+
+
